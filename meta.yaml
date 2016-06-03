@@ -1,0 +1,28 @@
+package:
+  name: stocks
+  version: "0.0.5"
+
+source:
+  path: ./
+
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - bokeh
+    - pandas
+    - pandas-datareader
+
+app:
+  entry: stocks_dashboard.bat # [win]
+  entry: open ${PREFIX}/bin/stocks_dashboard.command # [osx]
+  summary: Moving average strategies
+  type: web
+
+about:
+  home: http://localhost
+  license: BSD
+

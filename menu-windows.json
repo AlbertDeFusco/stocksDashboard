@@ -1,0 +1,11 @@
+{
+    "menu_name": "Anaconda${PY_VER} ${PLATFORM}",
+    "menu_items":
+    [
+    {
+        "name": "Stocks",
+        "script":"${PYTHON_SCRIPTS}/bokeh.bat",
+        "scriptarguments": ["serve","--show","${PYTHON_SCRIPTS}/stocks-dashboard.py"]
+    }
+    ]
+}
